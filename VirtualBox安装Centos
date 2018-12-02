@@ -35,3 +35,16 @@ SELINUX=disabled
 yum clean all
 yum makecache
 yum install wget
+
+
+安装java
+vi etc/profile
+export JAVA_HOME=/usr/local/JDK/jdk1.8.0_191
+export PATH=$JAVA\_HOME/bin:$PATH
+export CLASSPATH=.:$JAVA\_HOME/lib/dt.jar:$JAVA\_HOME/lib/tools.jar
+export JRE\_HOME=$JAVA\_HOME/jre
+查看系统位数
+
+getconfig LONG_BIT
+
+source /etc/profile
