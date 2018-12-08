@@ -1,0 +1,1 @@
+Redis-benchMark命令可以对Redis进行压测，对QPS进行测试（Query per Second）；设置连接客户端的数量，请求量，每次请求数据的大小；
