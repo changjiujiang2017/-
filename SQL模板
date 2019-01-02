@@ -4,3 +4,5 @@ left join system s
 on a.agent_key=s.agent_key
 
 <resultMap>虚拟字段<resultMap>
+
+2.使用exists进行连表查询select * from agent_info t where exists(select 1 from sys_env s where s.agent_key=t.agent_key) 
