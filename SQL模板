@@ -1,0 +1,6 @@
+select a.id as agent_id ,s.sys_name ,a.agent_name
+from agent a
+left join system s
+on a.agent_key=s.agent_key
+
+<resultMap>虚拟字段<resultMap>
